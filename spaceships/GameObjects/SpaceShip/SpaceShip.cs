@@ -8,8 +8,14 @@ using System.Windows;
 
 namespace spaceships.GameObjects.SpaceShip
 {
-    class SpaceShip : GameObject
+    class SpaceShip : GameObject                // Vesmírná loď
     {
-        public int Health { get; set; }
+        public int Health { get; set; }         // Životy
+
+        public SpaceShip() : base()
+        {
+            this.Name = "unnamed_space_ship";
+            Console.WriteLine("Space_ship has been created.");
+        }
     }
 }

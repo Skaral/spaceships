@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7C98B6B9-3CD8-4191-B06C-410ABA53EAEA}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>spaceships</RootNamespace>
     <AssemblyName>spaceships</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +57,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\Projectiles\Projectile.cs" />
+    <Compile Include="GameObjects\SpaceShip\Components\Component.cs" />
+    <Compile Include="GameObjects\SpaceShip\Components\Weapons\Weapon.cs" />
     <Compile Include="GUI\Component.cs" />
     <Compile Include="GUI\Interfaces\IClickable.cs" />
     <Compile Include="GUI\Interfaces\IDrawable.cs" />
@@ -84,6 +90,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GameObjects\SpaceShip\Components\Defence\" />
+    <Folder Include="GameObjects\SpaceShip\Components\Engines\" />
+    <Folder Include="GameObjects\SpaceShip\Components\Misc\Electronics\" />
+    <Folder Include="GameObjects\SpaceShip\Components\Power\Batteries\" />
+    <Folder Include="GameObjects\SpaceShip\Components\Power\Coolers\" />
+    <Folder Include="GameObjects\SpaceShip\Components\Power\Generators\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
