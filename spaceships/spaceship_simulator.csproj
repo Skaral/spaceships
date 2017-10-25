@@ -59,6 +59,7 @@
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Projectiles\Projectile.cs" />
     <Compile Include="GameObjects\SpaceShip\Components\Component.cs" />
+    <Compile Include="GameObjects\SpaceShip\Components\Defence\Armor\Armor.cs" />
     <Compile Include="GameObjects\SpaceShip\Components\Weapons\Weapon.cs" />
     <Compile Include="GUI\Component.cs" />
     <Compile Include="GUI\Interfaces\IClickable.cs" />
@@ -92,7 +93,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GameObjects\SpaceShip\Components\Defence\" />
+    <Folder Include="GameObjects\SpaceShip\Components\Defence\CounterMeasures\" />
+    <Folder Include="GameObjects\SpaceShip\Components\Defence\Shields\" />
     <Folder Include="GameObjects\SpaceShip\Components\Engines\" />
     <Folder Include="GameObjects\SpaceShip\Components\Misc\Electronics\" />
     <Folder Include="GameObjects\SpaceShip\Components\Power\Batteries\" />
